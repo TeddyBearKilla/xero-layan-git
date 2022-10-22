@@ -24,7 +24,7 @@ sudo pacman -S --needed --noconfirm layan-gtk-theme-git layan-kde-git tela-purpl
 sleep 2
 echo "Installing Fonts"
 echo "#################################"
-sudo pacman -S --needed --noconfirm nerd-fonts-hack nerd-fonts-fira-code nerd-fonts-meslo nerd-fonts-terminus noto-fonts-emoji
+sudo pacman -S --needed --noconfirm ttf-hack-nerd nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-terminus-nerd noto-fonts-emoji
 sleep 2
 echo "Applying new Rice, hold on..."
 echo "#################################"
