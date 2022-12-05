@@ -32,7 +32,7 @@ Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 [Plugins]
 autocomposerEnabled=false
 blurEnabled=true
-contrastEnabled=true
+contrastEnabled=false
 desktopchangeosdEnabled=false
 dynamic_workspacesEnabled=true
 force-decorations-gtk3Enabled=false
