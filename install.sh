@@ -72,7 +72,7 @@ sleep 2
 echo
 echo "Applying Flatpak Theme Fix..."
 echo "#################################"
-sh /usr/local/bin/stylepak install-system
+sh /usr/local/bin/stylepak install-system Layan-Dark
 sleep 2
 echo
 echo "Applying Grub Theme...."
