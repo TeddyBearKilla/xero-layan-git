@@ -25,27 +25,6 @@ viewType=0
 visibility=2
 wallpaperplugin=org.kde.image
 
-[Containments][12][Applets][103]
-immutability=1
-plugin=org.kde.windowtitle
-
-[Containments][12][Applets][103][Configuration]
-PreloadWeight=0
-
-[Containments][12][Applets][103][Configuration][ConfigDialog]
-DialogHeight=939
-DialogWidth=988
-
-[Containments][12][Applets][103][Configuration][General]
-containmentType=Latte
-filterActivityInfo=false
-filterByScreen=true
-iconFillThickness=false
-iconSize=22
-lengthLastMargin=5
-subsMatch="Telegram Desktop","Gimp-.*","Microsoft Edge","Msedge"
-subsReplace="Telegram","Gimp","Edge","Edge"
-
 [Containments][12][Applets][104]
 immutability=1
 plugin=org.kde.plasma.appmenu
@@ -58,7 +37,7 @@ immutability=1
 plugin=org.kde.netspeedWidget
 
 [Containments][12][Applets][204][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][12][Applets][204][Configuration][ConfigDialog]
 DialogHeight=558
@@ -67,46 +46,12 @@ DialogWidth=720
 [Containments][12][Applets][204][Configuration][General]
 speedUnits=bits
 
-[Containments][12][Applets][205]
-immutability=1
-plugin=org.kde.plasma.systemmonitor
-
-[Containments][12][Applets][205][Configuration]
-CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=52
-
-[Containments][12][Applets][205][Configuration][Appearance]
-chartFace=org.kde.ksysguard.piechart
-title=Total CPU Use
-
-[Containments][12][Applets][205][Configuration][ConfigDialog]
-DialogHeight=558
-DialogWidth=720
-
-[Containments][12][Applets][205][Configuration][SensorColors]
-cpu/all/usage=86,87,245
-
-[Containments][12][Applets][205][Configuration][SensorLabels]
-cpu/all/usage=.
-
-[Containments][12][Applets][205][Configuration][Sensors]
-highPrioritySensorIds=["cpu/all/usage"]
-lowPrioritySensorIds=["cpu/all/cpuCount","cpu/all/coreCount"]
-totalSensors=["cpu/all/usage"]
-
-[Containments][12][Applets][208]
-immutability=1
-plugin=org.kde.plasma.keyboardlayout
-
-[Containments][12][Applets][208][Configuration]
-PreloadWeight=42
-
 [Containments][12][Applets][220]
 immutability=1
 plugin=org.kde.plasma.betterinlineclock
 
 [Containments][12][Applets][220][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][12][Applets][220][Configuration][Appearance]
 customDateFormat=ddd d MMM yyyy
@@ -118,16 +63,12 @@ use24hFormat=2
 DialogHeight=558
 DialogWidth=720
 
-[Containments][12][Applets][226]
-immutability=1
-plugin=org.kde.latte.separator
-
 [Containments][12][Applets][88]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][12][Applets][88][Configuration]
-PreloadWeight=100
+PreloadWeight=52
 SystrayContainmentId=89
 
 [Containments][12][ConfigDialog]
@@ -140,7 +81,7 @@ PreloadWeight=0
 [Containments][12][General]
 alignment=10
 alignmentUpgraded=true
-appletOrder=103;104;220;204;226;205;208;88
+appletOrder=104;220;204;88
 autoDecreaseIconSize=false
 autoSizeEnabled=false
 backgroundRadius=24
@@ -164,8 +105,8 @@ shadowOpacity=35
 shadowSize=25
 shadows=None
 shadowsUpgraded=true
-splitterPosition=3
-splitterPosition2=7
+splitterPosition=2
+splitterPosition2=4
 taskScrollAction=ScrollNone
 tasksUpgraded=true
 thickMargin=24
@@ -214,7 +155,7 @@ immutability=1
 plugin=org.kde.plasma.kicker
 
 [Containments][13][Applets][203][Configuration]
-PreloadWeight=100
+PreloadWeight=52
 
 [Containments][13][Applets][203][Configuration][ConfigDialog]
 DialogHeight=558
@@ -313,7 +254,7 @@ immutability=1
 plugin=org.kde.plasma.compact-shutdown
 
 [Containments][14][Applets][84][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][14][Applets][84][Configuration][ConfigDialog]
 DialogHeight=540
@@ -420,6 +361,9 @@ taskScrollAction=ScrollToggleMinimized
 immutability=1
 plugin=com.himdek.kde.plasma.overview
 
+[Containments][15][Applets][228][Configuration]
+PreloadWeight=2
+
 [Containments][15][ConfigDialog]
 DialogHeight=1254
 DialogWidth=529
@@ -499,13 +443,6 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][89][Applets][100][Configuration]
-PreloadWeight=14
-
-[Containments][89][Applets][101]
-immutability=1
-plugin=org.kde.plasma.bluetooth
-
-[Containments][89][Applets][101][Configuration]
 PreloadWeight=0
 
 [Containments][89][Applets][194]
@@ -520,35 +457,35 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][89][Applets][216][Configuration]
-PreloadWeight=47
+PreloadWeight=0
 
 [Containments][89][Applets][217]
 immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][89][Applets][217][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][89][Applets][221]
 immutability=1
 plugin=org.kde.plasma.manage-inputmethod
 
 [Containments][89][Applets][221][Configuration]
-PreloadWeight=42
-
-[Containments][89][Applets][227][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][89][Applets][229]
 immutability=1
 plugin=org.kde.plasma.printmanager
+
+[Containments][89][Applets][229][Configuration]
+PreloadWeight=2
 
 [Containments][89][Applets][90]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][89][Applets][90][Configuration]
-PreloadWeight=7
+PreloadWeight=0
 
 [Containments][89][Applets][93]
 immutability=1
@@ -600,7 +537,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][89][Applets][99][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][89][ConfigDialog]
 DialogHeight=941
