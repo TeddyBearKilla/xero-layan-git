@@ -13,14 +13,14 @@ echo
 echo "Backing up current XeroASCII      "
 echo "##################################"
 # Check if pacman.conf.old file exists in /etc/
-if [ -f "~/XeroAscii.old" ]; then
+if [ -f "$HOME/XeroAscii.old" ]; then
     echo "Deleting existing XeroAscii.old file..."
-    sudo rm ~/XeroAscii.old
+    sudo rm $HOME/XeroAscii.old
 fi
 # Rename pacman.conf to pacman.conf.old
-if [ -f "~/XeroAscii" ]; then
+if [ -f "$HOME/XeroAscii" ]; then
     echo "Renaming XeroAscii to XeroAscii.old..."
-    sudo mv ~/XeroAscii ~/XeroAscii.old
+    sudo mv $HOME/XeroAscii $HOME/XeroAscii.old
 fi
 echo
 echo "Installing Necessary Packages    "
