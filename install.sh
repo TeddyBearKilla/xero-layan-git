@@ -10,6 +10,19 @@ echo "#####################################"
 cp -r ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
 sleep 2
 echo
+echo "Backing up current XeroASCII      "
+echo "##################################"
+# Check if pacman.conf.old file exists in /etc/
+if [ -f "~/XeroAscii.old" ]; then
+    echo "Deleting existing XeroAscii.old file..."
+    sudo rm ~/XeroAscii.old
+fi
+# Rename pacman.conf to pacman.conf.old
+if [ -f "~/XeroAscii" ]; then
+    echo "Renaming XeroAscii to XeroAscii.old..."
+    sudo mv ~/XeroAscii ~/XeroAscii.old
+fi
+echo
 echo "Installing Necessary Packages    "
 echo "#################################"
 # Check if lightly-git and latte-dock exist
