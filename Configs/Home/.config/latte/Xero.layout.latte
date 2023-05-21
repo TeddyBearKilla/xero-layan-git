@@ -9,7 +9,7 @@ enableKWinEdges=false
 formfactor=2
 immutability=1
 isPreferredForShortcuts=false
-lastScreen=0
+lastScreen=10
 layoutId=
 location=3
 name=
@@ -17,6 +17,7 @@ onPrimary=true
 plugin=org.kde.latte.containment
 raiseOnActivityChange=false
 raiseOnDesktopChange=false
+screensGroup=0
 settingsComplexity=4
 timerHide=0
 timerShow=0
@@ -71,10 +72,11 @@ immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][12][Applets][205][Configuration]
-PreloadWeight=47
+CurrentPreset=org.kde.plasma.systemmonitor
+PreloadWeight=52
 
 [Containments][12][Applets][205][Configuration][Appearance]
-chartFace=org.kde.ksysguard.barchart
+chartFace=org.kde.ksysguard.piechart
 title=Total CPU Use
 
 [Containments][12][Applets][205][Configuration][ConfigDialog]
@@ -97,10 +99,11 @@ immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][12][Applets][206][Configuration]
-PreloadWeight=42
+CurrentPreset=org.kde.plasma.systemmonitor
+PreloadWeight=52
 
 [Containments][12][Applets][206][Configuration][Appearance]
-chartFace=org.kde.ksysguard.barchart
+chartFace=org.kde.ksysguard.piechart
 title=Memory Usage
 
 [Containments][12][Applets][206][Configuration][ConfigDialog]
@@ -142,29 +145,6 @@ use24hFormat=2
 DialogHeight=558
 DialogWidth=720
 
-[Containments][12][Applets][222]
-immutability=1
-plugin=com.github.k-donn.plasmoid-wunderground
-
-[Containments][12][Applets][222][Configuration]
-PreloadWeight=42
-
-[Containments][12][Applets][222][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][12][Applets][222][Configuration][Station]
-latitude=33.863663
-longitude=35.597227
-stationID=IMATND12
-
-[Containments][12][Applets][223]
-immutability=1
-plugin=org.kde.latte.separator
-
-[Containments][12][Applets][223][Configuration]
-PreloadWeight=42
-
 [Containments][12][Applets][225]
 immutability=1
 plugin=org.kde.latte.separator
@@ -191,7 +171,7 @@ PreloadWeight=0
 [Containments][12][General]
 alignment=10
 alignmentUpgraded=true
-appletOrder=103;104;220;223;222;206;225;204;226;205;208;88
+appletOrder=103;104;220;206;225;204;226;205;208;88
 autoDecreaseIconSize=false
 autoSizeEnabled=false
 backgroundRadius=24
@@ -219,7 +199,7 @@ splitterPosition=3
 splitterPosition2=7
 taskScrollAction=ScrollNone
 tasksUpgraded=true
-thickMargin=5
+thickMargin=24
 titleTooltips=false
 zoomLevel=0
 
@@ -244,7 +224,7 @@ enableKWinEdges=false
 formfactor=2
 immutability=1
 isPreferredForShortcuts=false
-lastScreen=0
+lastScreen=10
 layoutId=
 location=3
 name=
@@ -252,6 +232,7 @@ onPrimary=true
 plugin=org.kde.latte.containment
 raiseOnActivityChange=false
 raiseOnDesktopChange=false
+screensGroup=0
 settingsComplexity=4
 timerHide=50
 timerShow=0
@@ -272,7 +253,7 @@ DialogWidth=720
 
 [Containments][13][Applets][203][Configuration][General]
 alphaSort=true
-customButtonImage=/usr/share/latte/appmenu.svg
+customButtonImage=/usr/share/logos/xero.png
 favoriteSystemActions=logout
 favoritesPortedToKAstats=true
 limitDepth=true
@@ -318,7 +299,7 @@ splitterPosition=1
 splitterPosition2=3
 taskScrollAction=ScrollNone
 tasksUpgraded=true
-thickMargin=5
+thickMargin=24
 zoomLevel=0
 
 [Containments][13][Indicator]
@@ -342,7 +323,7 @@ enableKWinEdges=false
 formfactor=2
 immutability=1
 isPreferredForShortcuts=false
-lastScreen=0
+lastScreen=10
 layoutId=
 location=3
 name=
@@ -350,6 +331,7 @@ onPrimary=true
 plugin=org.kde.latte.containment
 raiseOnActivityChange=false
 raiseOnDesktopChange=false
+screensGroup=0
 settingsComplexity=4
 timerHide=50
 timerShow=0
@@ -405,7 +387,7 @@ splitterPosition=2
 splitterPosition2=3
 taskScrollAction=ScrollNone
 tasksUpgraded=true
-thickMargin=5
+thickMargin=24
 titleTooltips=false
 zoomLevel=0
 
@@ -430,7 +412,7 @@ enableKWinEdges=false
 formfactor=2
 immutability=1
 isPreferredForShortcuts=false
-lastScreen=0
+lastScreen=10
 layoutId=
 location=4
 name=
@@ -438,29 +420,13 @@ onPrimary=true
 plugin=org.kde.latte.containment
 raiseOnActivityChange=false
 raiseOnDesktopChange=false
+screensGroup=0
 settingsComplexity=4
 timerHide=0
 timerShow=0
 viewType=0
 visibility=3
 wallpaperplugin=org.kde.image
-
-[Containments][15][Applets][110]
-immutability=1
-plugin=com.github.zren.presentwindows
-
-[Containments][15][Applets][110][Configuration]
-PreloadWeight=0
-
-[Containments][15][Applets][110][Configuration][ConfigDialog]
-DialogHeight=939
-DialogWidth=872
-
-[Containments][15][Applets][110][Configuration][General]
-useUnityTheme=2
-
-[Containments][15][Applets][110][Shortcuts]
-global=Alt+Esc
 
 [Containments][15][Applets][193]
 immutability=1
@@ -474,12 +440,16 @@ hoverAction=PreviewWindows
 infoBadgeProminentColorEnabled=true
 isInLatteDock=true
 isPreferredForDroppedLaunchers=false
-launchers59=file:///latte-separator1.desktop,applications:org.kde.dolphin.desktop,applications:firefox.desktop,applications:kvantummanager.desktop,applications:org.kde.konsole.desktop,applications:systemsettings.desktop,file:///latte-separator2.desktop
+launchers59=file:///latte-separator1.desktop,applications:org.kde.dolphin.desktop,applications:firefox.desktop,applications:kvantummanager.desktop,applications:org.kde.konsole.desktop,applications:org.gnome.Meld.desktop,applications:com.github.tchx84.Flatseal.desktop,applications:systemsettings.desktop,file:///latte-separator2.desktop,applications:xerowelcome.desktop
 previewWindowAsPopup=true
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=true
 showWindowActions=true
 taskScrollAction=ScrollToggleMinimized
+
+[Containments][15][Applets][228]
+immutability=1
+plugin=com.himdek.kde.plasma.overview
 
 [Containments][15][ConfigDialog]
 DialogHeight=1254
@@ -490,7 +460,7 @@ PreloadWeight=0
 
 [Containments][15][General]
 alignmentUpgraded=true
-appletOrder=110;193
+appletOrder=228;193
 autoDecreaseIconSize=false
 backgroundRadius=23
 backgroundShadowSize=24
@@ -641,6 +611,9 @@ plugin=org.kde.plasma.volume
 [Containments][89][Applets][97][Configuration]
 PreloadWeight=0
 
+[Containments][89][Applets][97][Configuration][General]
+migrated=true
+
 [Containments][89][Applets][98]
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
@@ -660,9 +633,9 @@ DialogHeight=941
 DialogWidth=1804
 
 [Containments][89][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.mediacontroller_plus,org.kde.plasma.manage-inputmethod
+extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.mediacontroller_plus,org.kde.plasma.manage-inputmethod,org.kde.kalendar.contact,org.kde.plasma.printmanager
 hiddenItems=org.kde.plasma.mediacontroller,Yakuake,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.diskquota,org.kde.plasma.vault,Barrier
-knownItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.mediacontroller_plus,org.kde.plasma.manage-inputmethod
+knownItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.volume,org.kde.plasma.mediacontroller_plus,org.kde.plasma.manage-inputmethod,org.kde.kalendar.contact,org.kde.kscreen,org.kde.plasma.printmanager
 shownItems=org.kde.plasma.volume,org.kde.plasma.networkmanagement
 
 [LayoutSettings]

@@ -1,4 +1,6 @@
 [KFileDialog Settings]
+Recent Files[$e]=xero.png,file:///usr/share/logos/xero.png
+Recent URLs[$e]=file:///usr/share/logos/
 iconViewIconSize=128
 
 [LatteSettingsDialog]
@@ -32,6 +34,7 @@ contextMenuActionsAlwaysShown=
 currentLayout=Default
 downloadWindowSize=800,550
 inAdvancedModeForEditSettings=true
+inConfigureAppletsMode=true
 isAvailableGeometryBroadcastedToPlasma=true
 lastNonAssignedLayout=Default
 launchers=
@@ -40,6 +43,8 @@ layoutsWindowSize=700,450
 memoryUsage=0
 metaPressAndHoldEnabled=true
 mouseSensitivity=2
+parabolicSpread=3
+parabolicThicknessMarginInfluence=1
 screenTrackerInterval=1100
 showInfoWindow=true
 singleModeLayoutName=Xero
