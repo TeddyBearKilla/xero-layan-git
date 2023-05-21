@@ -87,10 +87,6 @@ echo "#################################"
 sh /usr/local/bin/stylepak install-system Layan-Dark
 sleep 2
 echo
-echo "Applying New XeroASCII...."
-echo "#################################"
-cd ~ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/XeroAscii
-echo
 echo "Applying Grub Theme...."
 echo "#################################"
 chmod +x CyberRe.sh
@@ -98,6 +94,10 @@ sudo ./CyberRe.sh
 sudo sed -i "s/#GRUB_GFXMODE=640x480/GRUB_GFXMODE=1920x1080/g" /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 sleep 2
+echo
+echo "Applying New XeroASCII...."
+echo "#################################"
+cd ~ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/XeroAscii
 echo
 echo "Plz Reboot To Apply Settings..."
 echo "#################################"
