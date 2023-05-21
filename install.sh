@@ -88,9 +88,9 @@ echo "#################################"
 sh /usr/local/bin/stylepak install-system Layan-Dark
 sleep 2
 echo
-echo "Applying Grub Theme...."
+echo "Applying New XeroASCII...."
 echo "#################################"
-cd ~ && wget https://raw.githubusercontent.com/xerolinux/xero-kde-config/main/etc/skel/XeroAscii
+cd ~ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/XeroAscii
 echo
 echo "Applying Grub Theme...."
 echo "#################################"
