@@ -3,7 +3,7 @@ DefaultProfile=XeroLinux.profile
 
 [KonsoleWindow]
 AllowMenuAccelerators=true
-SaveGeometryOnExit=false
+RememberWindowSize=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
