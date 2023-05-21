@@ -90,6 +90,10 @@ sleep 2
 echo
 echo "Applying Grub Theme...."
 echo "#################################"
+cd ~ && wget https://raw.githubusercontent.com/xerolinux/xero-kde-config/main/etc/skel/XeroAscii
+echo
+echo "Applying Grub Theme...."
+echo "#################################"
 chmod +x CyberRe.sh
 sudo ./CyberRe.sh
 sudo sed -i "s/#GRUB_GFXMODE=640x480/GRUB_GFXMODE=1920x1080/g" /etc/default/grub

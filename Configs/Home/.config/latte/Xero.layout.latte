@@ -94,33 +94,6 @@ highPrioritySensorIds=["cpu/all/usage"]
 lowPrioritySensorIds=["cpu/all/cpuCount","cpu/all/coreCount"]
 totalSensors=["cpu/all/usage"]
 
-[Containments][12][Applets][206]
-immutability=1
-plugin=org.kde.plasma.systemmonitor
-
-[Containments][12][Applets][206][Configuration]
-CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=52
-
-[Containments][12][Applets][206][Configuration][Appearance]
-chartFace=org.kde.ksysguard.piechart
-title=Memory Usage
-
-[Containments][12][Applets][206][Configuration][ConfigDialog]
-DialogHeight=558
-DialogWidth=720
-
-[Containments][12][Applets][206][Configuration][SensorColors]
-memory/physical/used=86,87,245
-
-[Containments][12][Applets][206][Configuration][SensorLabels]
-memory/physical/used=Ram
-
-[Containments][12][Applets][206][Configuration][Sensors]
-highPrioritySensorIds=["memory/physical/used"]
-lowPrioritySensorIds=["memory/physical/total"]
-totalSensors=["memory/physical/usedPercent"]
-
 [Containments][12][Applets][208]
 immutability=1
 plugin=org.kde.plasma.keyboardlayout
@@ -145,10 +118,6 @@ use24hFormat=2
 DialogHeight=558
 DialogWidth=720
 
-[Containments][12][Applets][225]
-immutability=1
-plugin=org.kde.latte.separator
-
 [Containments][12][Applets][226]
 immutability=1
 plugin=org.kde.latte.separator
@@ -171,7 +140,7 @@ PreloadWeight=0
 [Containments][12][General]
 alignment=10
 alignmentUpgraded=true
-appletOrder=103;104;220;206;225;204;226;205;208;88
+appletOrder=103;104;220;204;226;205;208;88
 autoDecreaseIconSize=false
 autoSizeEnabled=false
 backgroundRadius=24
