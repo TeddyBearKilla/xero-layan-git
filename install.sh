@@ -74,8 +74,8 @@ if ! pacman -Qs noto-fonts-emoji; then
   sudo pacman -S noto-fonts-emoji --noconfirm
 fi
 
-if ! pacman -Qs nerd-fonts-hasklig; then
-  sudo pacman -S nerd-fonts-hasklig --noconfirm
+if ! pacman -Qs otf-hasklig-nerd; then
+  sudo pacman -S otf-hasklig-nerd --noconfirm
 fi
 sleep 2
 echo
