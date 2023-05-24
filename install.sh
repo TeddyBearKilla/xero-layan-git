@@ -114,6 +114,7 @@ echo
 echo "Applying GTK4 Fix Plz Wait...    "
 echo "#################################"
 cd ~ && git clone https://github.com/vinceliuice/Layan-gtk-theme.git && cd Layan-gtk-theme/ && sh install.sh -l -c dark
+cd ~ && rm -Rf Layan-gtk-theme/
 echo
 echo "Plz Reboot To Apply Settings..."
 echo "#################################"
