@@ -33,6 +33,14 @@ if pacman -Qs lightly-git && pacman -Qs latte-dock; then
   # Install latte-dock-git and kvantum
   sudo pacman -S latte-dock-git kvantum --noconfirm
 fi
+
+if ! pacman -Qs gtk-engine-murrine; then
+  sudo pacman -S gtk-engine-murrine --noconfirm
+fi
+
+if ! pacman -Qs gtk-engines; then
+  sudo pacman -S gtk-engines --noconfirm
+fi
 sleep 2
 echo
 echo "Installing Layan Theme"
@@ -102,6 +110,10 @@ echo
 echo "Applying New XeroASCII...."
 echo "#################################"
 cd ~ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/XeroAscii
+echo
+echo "Applying GTK4 Fix Plz Wait...    "
+echo "#################################"
+cd ~ && git clone https://github.com/vinceliuice/Layan-gtk-theme.git && cd Layan-gtk-theme/ && sh install.sh -l -c dark
 echo
 echo "Plz Reboot To Apply Settings..."
 echo "#################################"
