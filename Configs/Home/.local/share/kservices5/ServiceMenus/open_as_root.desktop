@@ -7,7 +7,7 @@ ServiceTypes=KonqPopupMenu/Plugin,inode/directory,inode/directory-locked
 [Desktop Action OpenAsRootKDE5]
 Exec=if [ "$XDG_SESSION_TYPE" = "wayland" ]; then xhost +si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin %U && xhost -si:localuser:root ; else pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dolphin %U; fi;
 Icon=system-file-manager
-Name=Open as Root
+Name=Open as Root (Plugin)
 Name[ru]=Открыть папку с правами рут
 Name[ua]=Відкрити папку з правами рут
 Name[zh_CN]=打开具有根权限的文件夹
