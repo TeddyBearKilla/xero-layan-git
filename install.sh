@@ -28,7 +28,7 @@ echo "#################################"
 # Check if lightly-git and latte-dock exist
 if pacman -Qs lightly-git && pacman -Qs latte-dock; then
   # Remove lightly-git and latte-dock
-  sudo pacman -Rns lightly-git latte-dock --noconfirm
+  sudo pacman -Rns --noconfirm lightly-git latte-dock > /dev/null 2>&1
   
   # Install latte-dock-git and kvantum
   sudo pacman -S latte-dock-git kvantum --noconfirm
