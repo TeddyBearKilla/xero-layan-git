@@ -41,18 +41,6 @@ fi
 if ! pacman -Qs gtk-engines; then
   sudo pacman -S gtk-engines --noconfirm
 fi
-sleep 2
-echo
-echo "Installing Layan Theme"
-echo "#################################"
-# Check and install theme packages if they don't exist
-if ! pacman -Qs layan-gtk-theme-git; then
-  sudo pacman -S layan-gtk-theme-git --noconfirm
-fi
-
-if ! pacman -Qs layan-kde-git; then
-  sudo pacman -S layan-kde-git --noconfirm
-fi
 
 if ! pacman -Qs tela-circle-icon-theme-purple-git; then
   sudo pacman -S tela-circle-icon-theme-purple-git --noconfirm
@@ -81,10 +69,6 @@ fi
 if ! pacman -Qs noto-fonts-emoji; then
   sudo pacman -S noto-fonts-emoji --noconfirm
 fi
-
-if ! pacman -Qs otf-hasklig-nerd; then
-  sudo pacman -S otf-hasklig-nerd --noconfirm
-fi
 sleep 2
 echo
 echo "Applying new Rice, hold on..."
@@ -92,11 +76,6 @@ echo "#################################"
 cp -Rf Configs/Home/. ~
 sudo cp -Rf Configs/System/. /
 sudo sed -i "s/Current=.*/Current=XeroDark/" /etc/sddm.conf.d/kde_settings.conf
-sleep 2
-echo
-echo "Applying Flatpak Theme Fix..."
-echo "#################################"
-sh /usr/local/bin/stylepak install-system Layan-Dark
 sleep 2
 echo
 echo "Applying Grub Theme...."
@@ -111,10 +90,23 @@ echo "Applying New XeroASCII...."
 echo "#################################"
 cd ~ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/XeroAscii
 echo
+echo "Installing Layan Theme"
+echo "#################################"
+echo
+cd ~ && git clone https://github.com/vinceliuice/Layan-kde.git && cd Layan-kde/ && sh install.sh
+cd ~ && rm -rf Layan-kde/
+sleep 2
+echo
 echo "Applying GTK4 Fix Plz Wait...    "
 echo "#################################"
 cd ~ && git clone https://github.com/vinceliuice/Layan-gtk-theme.git && cd Layan-gtk-theme/ && sh install.sh -l -c dark
 cd ~ && rm -Rf Layan-gtk-theme/
+echo
+echo
+echo "Applying Flatpak Theme Fix..."
+echo "#################################"
+sh /usr/local/bin/stylepak install-system Layan-Dark
+sleep 2
 echo
 echo "Plz Reboot To Apply Settings..."
 echo "#################################"
