@@ -28,22 +28,22 @@ echo "#################################"
 # Check if lightly-git and latte-dock exist
 if pacman -Qs lightly-git && pacman -Qs latte-dock; then
   # Remove lightly-git and latte-dock
-  sudo pacman -Rns --noconfirm lightly-git latte-dock > /dev/null 2>&1
+  sudo pacman -Rns --noconfirm --needed lightly-git latte-dock > /dev/null 2>&1
   
   # Install latte-dock-git and kvantum
-  sudo pacman -S latte-dock-git kvantum --noconfirm
+  sudo pacman -S latte-dock-git kvantum --noconfirm --needed
 fi
 
 if ! pacman -Qs gtk-engine-murrine; then
-  sudo pacman -S gtk-engine-murrine --noconfirm
+  sudo pacman -S gtk-engine-murrine --noconfirm --needed
 fi
 
 if ! pacman -Qs gtk-engines; then
-  sudo pacman -S gtk-engines --noconfirm
+  sudo pacman -S gtk-engines --noconfirm --needed
 fi
 
 if ! pacman -Qs tela-circle-icon-theme-purple-git; then
-  sudo pacman -S tela-circle-icon-theme-purple-git --noconfirm
+  sudo pacman -S tela-circle-icon-theme-purple-git --noconfirm --needed
 fi
 sleep 2
 echo
@@ -51,23 +51,23 @@ echo "Installing Fonts"
 echo "#################################"
 # Install font packages if they don't exist
 if ! pacman -Qs ttf-hack-nerd; then
-  sudo pacman -S ttf-hack-nerd --noconfirm
+  sudo pacman -S ttf-hack-nerd --noconfirm --needed
 fi
 
 if ! pacman -Qs ttf-fira-code; then
-  sudo pacman -S ttf-fira-code --noconfirm
+  sudo pacman -S ttf-fira-code --noconfirm --needed
 fi
 
 if ! pacman -Qs ttf-meslo-nerd-font-powerlevel10k; then
-  sudo pacman -S ttf-meslo-nerd-font-powerlevel10k --noconfirm
+  sudo pacman -S ttf-meslo-nerd-font-powerlevel10k --noconfirm --needed
 fi
 
 if ! pacman -Qs ttf-terminus-nerd; then
-  sudo pacman -S ttf-terminus-nerd --noconfirm
+  sudo pacman -S ttf-terminus-nerd --noconfirm --needed
 fi
 
 if ! pacman -Qs noto-fonts-emoji; then
-  sudo pacman -S noto-fonts-emoji --noconfirm
+  sudo pacman -S noto-fonts-emoji --noconfirm --needed
 fi
 sleep 2
 echo
