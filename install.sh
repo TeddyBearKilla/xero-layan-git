@@ -34,41 +34,13 @@ if pacman -Qs lightly-git && pacman -Qs latte-dock; then
   sudo pacman -S latte-dock-git kvantum --noconfirm --needed
 fi
 
-if ! pacman -Qs gtk-engine-murrine; then
-  sudo pacman -S gtk-engine-murrine --noconfirm --needed
-fi
-
-if ! pacman -Qs gtk-engines; then
-  sudo pacman -S gtk-engines --noconfirm --needed
-fi
-
-if ! pacman -Qs tela-circle-icon-theme-purple-git; then
-  sudo pacman -S tela-circle-icon-theme-purple-git --noconfirm --needed
-fi
-sleep 2
+# Check if any of the specified packages are installed and install them if not present
+packages="gtk-engine-murrine gtk-engines tela-circle-icon-theme-purple-git ttf-hack-nerd ttf-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-terminus-nerd noto-fonts-emoji"
 echo
-echo "Installing Fonts"
-echo "#################################"
-# Install font packages if they don't exist
-if ! pacman -Qs ttf-hack-nerd; then
-  sudo pacman -S ttf-hack-nerd --noconfirm --needed
-fi
-
-if ! pacman -Qs ttf-fira-code; then
-  sudo pacman -S ttf-fira-code --noconfirm --needed
-fi
-
-if ! pacman -Qs ttf-meslo-nerd-font-powerlevel10k; then
-  sudo pacman -S ttf-meslo-nerd-font-powerlevel10k --noconfirm --needed
-fi
-
-if ! pacman -Qs ttf-terminus-nerd; then
-  sudo pacman -S ttf-terminus-nerd --noconfirm --needed
-fi
-
-if ! pacman -Qs noto-fonts-emoji; then
-  sudo pacman -S noto-fonts-emoji --noconfirm --needed
-fi
+echo "Installing required packages..."
+for package in $packages; do
+    pacman -Qi "$package" > /dev/null 2>&1 || sudo pacman -Syy --noconfirm --needed "$package" > /dev/null 2>&1
+done
 sleep 2
 echo
 echo "Applying new Rice, hold on..."
@@ -98,7 +70,7 @@ cd ~ && git clone https://github.com/vinceliuice/Layan-kde.git && cd Layan-kde/ 
 cd ~ && rm -rf Layan-kde/
 sleep 2
 echo
-echo "Applying GTK4 Fix Plz Wait...    "
+echo "Installing & Applying GTK4 Theme "
 echo "#################################"
 cd ~ && git clone https://github.com/vinceliuice/Layan-gtk-theme.git && cd Layan-gtk-theme/ && sh install.sh -l -c dark
 cd ~ && rm -Rf Layan-gtk-theme/
