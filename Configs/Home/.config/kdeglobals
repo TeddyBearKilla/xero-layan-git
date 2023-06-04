@@ -136,7 +136,9 @@ ForegroundPositive=0,110,40
 ForegroundVisited=224,64,251
 
 [General]
+AccentColor=184,117,220
 ColorSchemeHash=625c32ae46f33771aca7694ab0deae5a44bbf41c
+LastUsedCustomAccentColor=184,117,220
 Name=Layan
 shadeSortColumn=true
 widgetStyle=kvantum
