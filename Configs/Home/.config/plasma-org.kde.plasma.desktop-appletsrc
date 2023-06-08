@@ -6,6 +6,7 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
+ItemGeometriesHorizontal=
 activityId=cd915191-804f-4d50-8fc3-f8e5c0279f54
 formfactor=0
 immutability=1
@@ -25,17 +26,6 @@ ToolBoxButtonX=897
 [Containments][1][Wallpaper][org.kde.image][General]
 Image=/usr/share/wallpapers/Xero-Plasma1.png
 SlidePaths=/usr/share/wallpapers
-
-[Containments][2]
-ItemGeometries-0x0=
-ItemGeometriesHorizontal=
-activityId=00000000-0000-0000-0000-000000000000
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=
