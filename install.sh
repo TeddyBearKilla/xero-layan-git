@@ -26,9 +26,7 @@ echo "Installing Necessary Packages"
 echo "#############################"
 # Check if any of the specified packages are installed and install them if not present
 packages="latte-dock-git kvantum gtk-engine-murrine gtk-engines tela-circle-icon-theme-purple-git ttf-hack-nerd ttf-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-terminus-nerd noto-fonts-emoji"
-echo
-echo "Installing required packages..."
-echo "###############################"
+
 for package in $packages; do
     pacman -Qi "$package" > /dev/null 2>&1 || sudo pacman -Syy --noconfirm --needed "$package" > /dev/null 2>&1
 done
