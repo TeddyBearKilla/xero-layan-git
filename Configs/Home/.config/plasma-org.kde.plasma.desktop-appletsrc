@@ -24,7 +24,7 @@ ToolBoxButtonState=topcenter
 ToolBoxButtonX=897
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/Xero-Plasma1.png
+Image=/usr/share/LayanWall/XeroLayanWallpaper.png
 SlidePaths=/usr/share/wallpapers
 
 [ScreenMapping]
