@@ -37,6 +37,6 @@ terminal-border: "0"
   align = "center"
   id = "__timeout__"
   text = "Selected OS will start in %d seconds"
-  color = "#c9a6f6"
+  color = "#9a72ab"
   font = "Ubuntu Regular 20"
 }
