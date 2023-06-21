@@ -63,7 +63,17 @@ echo "#################################"
 cd ~ && git clone https://github.com/vinceliuice/Layan-gtk-theme.git && cd Layan-gtk-theme/ && sh install.sh -l -c dark
 cd ~ && rm -Rf Layan-gtk-theme/
 echo
-sh /usr/local/bin/flatfix
+echo "Applying Flatpak GTK Overrides"
+echo "##############################"
+sudo flatpak override --filesystem=$HOME/.themes
+sudo flatpak override --filesystem=xdg-config/gtk-3.0:ro
+sudo flatpak override --filesystem=xdg-config/gtk-4.0:ro
+echo
+sleep 1.5
+echo "Converting Current Theme to Flatpak"
+echo "###################################"
+sleep 1.5
+stylepak install-system Layan-Dark && stylepak install-user Layan-Dark
 sleep 2
 echo
 echo "Plz Reboot To Apply Settings..."
