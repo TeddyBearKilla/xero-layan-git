@@ -75,6 +75,7 @@ echo "###################################"
 sleep 1.5
 stylepak install-system Layan-Dark && stylepak install-user Layan-Dark
 sleep 2
+rm -rf .cache/
 echo
 echo "Plz Reboot To Apply Settings..."
 echo "###############################"
