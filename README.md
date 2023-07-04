@@ -1,6 +1,6 @@
 # This is XeroLinux's Layan Rice
 
-### Disclosure
+### Disclaimer
 
 > I would like to clarify one very important aspect of ricing. We use custom themes in every one of our rices, and those might not get updated very often, if at all by their respective developers/artists, which might result in some parts of the system and apps not to get themed correctly. That, my friends, is unfortunately out of our hands.
 
@@ -8,7 +8,7 @@
 
 -> Performance :
 
-> This rice as with all rices has been throughly optimized for best performance.. If you have issues, kindly report them on our socials, Telegram/Discord.. we will try our best to help...
+> This rice as with most of our rices has been throughly optimized for best performance on higher-end systems.. Although it might work on lower-end ones, for better performance I do not recommend that you use it there. So please do not report any performance issues.
 
 #### Installation
 
@@ -16,9 +16,9 @@ Just clone this repository, run terminal inside directory and run installer Scri
 
 `git clone https://github.com/xerolinux/xero-layan-git.git && cd xero-layan-git && ./install.sh`
 
-### Reminder
+### Script
 
-Please follow the script instructions and answer some prompts with `y` when asked, if any, and select the right option for others. You might see a few errors pop up here n there, ignore them and let it do its thing. Once script is done your are urged to save any work you are doing and reboot for rice to be loaded and applied. Keep in mind that it will backup some app settings & all system ones before applying and overriding them with new ones, you will be able to restore what you need from the backup, so please do not report that. You have been warned. In case of any issues please find us on our [Discord Server](https://discord.gg/Xg6T78ahtK). Best of luck !
+Please follow the script instructions and answer prompts correctly when asked, if any. Once script is done your are urged to save any work you are doing and reboot for rice to be loaded and applied. Keep in mind that it will backup some app settings & all system ones before applying and overriding them with new ones, you will be able to restore what you need from the backup, so please do not report that. You have been warned. In case of any issues please find us on our [Discord Server](https://discord.gg/Xg6T78ahtK). Best of luck !
 
 ### Applying Theme/Rice Updates
 
