@@ -38,6 +38,3 @@ When you initially apply the rice, you will be getting latest theme/rice code in
 >
 > Q : I am running *Pre-Customized* **Arch** Distro with *KDE* can I use your rice ?<br />
 > A : Short answer, *might*. Long answer, too many variables, I don't guarantee success.
->
-> Q : After applying this rice on **XeroLinux** nice ASCII in neofetch gone how to get it back ?<br />
-> A : To get Xero ASCII in neofetch back just unhash line 114 in `config.conf` inside `/.config/neofetch/`
