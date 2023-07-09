@@ -16,6 +16,10 @@ Just clone this repository, run terminal inside directory and run installer Scri
 
 `git clone https://github.com/xerolinux/xero-layan-git.git && cd xero-layan-git && ./install.sh`
 
+### Support
+
+I didn't work on this rice alone, with the majority of the work, especially the wallpaper, Grub and overall consistency which were all done by my good friend and brother [@TeddyBearKilla](https://github.com/TeddyBearKilla), so please feel free to show him some love by buying him a [**Coffee**](https://ko-fi.com/teddybearkilla) or two...
+
 ### Script
 
 Please follow the script instructions and answer prompts correctly when asked, if any. Once script is done your are urged to save any work you are doing and reboot for rice to be loaded and applied. Keep in mind that it will backup some app settings & all system ones before applying and overriding them with new ones, you will be able to restore what you need from the backup, so please do not report that. You have been warned. In case of any issues please find us on our [Discord Server](https://discord.gg/Xg6T78ahtK). Best of luck !
