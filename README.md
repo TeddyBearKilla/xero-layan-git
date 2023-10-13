@@ -14,7 +14,7 @@
 
 Just clone this repository, run terminal inside directory and run installer Script using below command.
 
-`git clone https://github.com/xerolinux/xero-layan-git.git && cd xero-layan-git && ./install.sh`
+`git clone https://github.com/TeddyBearKilla/xero-layan-git && cd xero-layan-git && ./install.sh`
 
 ### Support
 
